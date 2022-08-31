@@ -7,15 +7,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @Route("/test")
- */
 class TestController extends AbstractController
 {
     const DAYS_BEFORE_START_DATE = 30;
 
     /**
-     * @Route("/carbon_iso", name="test_carbon_iso")
+     * @Route("/test_carbon_iso", name="test_carbon_iso")
      * @return JsonResponse
      */
     public function carbonISO(): JsonResponse
